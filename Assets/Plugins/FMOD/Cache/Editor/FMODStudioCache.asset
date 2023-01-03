@@ -1,0 +1,368 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9013112140774118397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ball/ball pickup
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ball/ball pickup
+  Guid:
+    Data1: -1388884709
+    Data2: 1195373162
+    Data3: -697979766
+    Data4: -1880678807
+  Banks:
+  - {fileID: -3276291741222356870}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 647
+--- !u!114 &-5524729694815629507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_MainLoop/Solved-Duck
+  m_EditorClassIdentifier: 
+  Name: Solved-Duck
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2188228451
+    data2: 2097281581
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3276291741222356870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/VR - Escape Room 14.12.22/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638068221560038216
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2551971781428126552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/wall/wall down
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/wall/wall down
+  Guid:
+    Data1: -339867339
+    Data2: 1143131820
+    Data3: 304126608
+    Data4: -89628402
+  Banks:
+  - {fileID: -3276291741222356870}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5500
+--- !u!114 &-2044974223848247992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/puzzle_solved
+  m_EditorClassIdentifier: 
+  Path: event:/music/puzzle_solved
+  Guid:
+    Data1: 2030808970
+    Data2: 1113515956
+    Data3: -1906357344
+    Data4: -309967945
+  Banks:
+  - {fileID: -3276291741222356870}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5595
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 7682896565206520993}
+  - {fileID: -3276291741222356870}
+  EditorEvents:
+  - {fileID: -9013112140774118397}
+  - {fileID: 1339710109424252194}
+  - {fileID: -2551971781428126552}
+  - {fileID: 8163697192955482553}
+  - {fileID: 4966381772758538904}
+  - {fileID: 8988205659455761534}
+  - {fileID: 8990181917811793365}
+  - {fileID: -2044974223848247992}
+  - {fileID: 1324787303943943364}
+  - {fileID: 5817365141288907234}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -3276291741222356870}
+  StringsBanks:
+  - {fileID: 7682896565206520993}
+  cacheTime: 638068221560177920
+  cacheVersion: 131593
+--- !u!114 &1324787303943943364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/book/book insert
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/book/book insert
+  Guid:
+    Data1: 2132496545
+    Data2: 1201047316
+    Data3: 783662471
+    Data4: 595577001
+  Banks:
+  - {fileID: -3276291741222356870}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 312
+--- !u!114 &1339710109424252194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ball/ball insert
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ball/ball insert
+  Guid:
+    Data1: 1702142759
+    Data2: 1084699785
+    Data3: -299667055
+    Data4: -935819377
+  Banks:
+  - {fileID: -3276291741222356870}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 582
+--- !u!114 &4966381772758538904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/book/book dropping
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/book/book dropping
+  Guid:
+    Data1: -273540012
+    Data2: 1292578207
+    Data3: -712324680
+    Data4: 524614049
+  Banks:
+  - {fileID: -3276291741222356870}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 390
+--- !u!114 &5817365141288907234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/teleport/teleport
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/teleport/teleport
+  Guid:
+    Data1: -1439956786
+    Data2: 1225571686
+    Data3: 242544039
+    Data4: 2078517240
+  Banks:
+  - {fileID: -3276291741222356870}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &7682896565206520993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/VR - Escape Room 14.12.22/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638068221560177920
+  FileSizes:
+  - Name: 
+    Value: 1614
+  Exists: 1
+--- !u!114 &8163697192955482553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/wrong/book wrong
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/wrong/book wrong
+  Guid:
+    Data1: -2118193591
+    Data2: 1298097147
+    Data3: 880814780
+    Data4: -1976254579
+  Banks:
+  - {fileID: -3276291741222356870}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 375
+--- !u!114 &8988205659455761534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/wrong/ball wrong
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/wrong/ball wrong
+  Guid:
+    Data1: -98175398
+    Data2: 1137625965
+    Data3: 347826065
+    Data4: -1433710918
+  Banks:
+  - {fileID: -3276291741222356870}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 375
+--- !u!114 &8990181917811793365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/Music_MainLoop
+  m_EditorClassIdentifier: 
+  Path: event:/music/Music_MainLoop
+  Guid:
+    Data1: 255191433
+    Data2: 1127815088
+    Data3: 1608271003
+    Data4: -1448293108
+  Banks:
+  - {fileID: -3276291741222356870}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5524729694815629507}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38000
