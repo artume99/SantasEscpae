@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1985307797104645139}
-  - component: {fileID: 1985307797104645138}
+  - component: {fileID: 2347738223391820209}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -95,7 +95,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1985307797104645138
+--- !u!114 &2347738223391820209
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,73 +104,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1985307797104645137}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e33178b8ef678da4b8f71075a7a83a8b, type: 3}
+  m_Script: {fileID: 11500000, guid: ed6eed20b2986904badbdbcae31e2206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventReferences:
-  - Guid:
-      Data1: 255191433
-      Data2: 1127815088
-      Data3: 1608271003
-      Data4: -1448293108
-    Path: event:/music/Music_MainLoop
-  - Guid:
-      Data1: 2030808970
-      Data2: 1113515956
-      Data3: -1906357344
-      Data4: -309967945
-    Path: event:/music/puzzle_solved
-  - Guid:
-      Data1: 1702142759
-      Data2: 1084699785
-      Data3: -299667055
-      Data4: -935819377
-    Path: event:/SFX/ball/ball insert
-  - Guid:
-      Data1: -1388884709
-      Data2: 1195373162
-      Data3: -697979766
-      Data4: -1880678807
-    Path: event:/SFX/ball/ball fall
-  - Guid:
-      Data1: -273540012
-      Data2: 1292578207
-      Data3: -712324680
-      Data4: 524614049
-    Path: event:/SFX/book/book dropping
-  - Guid:
-      Data1: 2132496545
-      Data2: 1201047316
-      Data3: 783662471
-      Data4: 595577001
-    Path: event:/SFX/book/book insert
-  - Guid:
-      Data1: -1439956786
-      Data2: 1225571686
-      Data3: 242544039
-      Data4: 2078517240
-    Path: event:/SFX/teleport
-  - Guid:
-      Data1: -339867339
-      Data2: 1143131820
-      Data3: 304126608
-      Data4: -89628402
-    Path: event:/SFX/wall down
-  - Guid:
-      Data1: -2118193591
-      Data2: 1298097147
-      Data3: 880814780
-      Data4: -1976254579
-    Path: event:/SFX/wrong
-  - Guid:
-      Data1: -2118193591
-      Data2: 1298097147
-      Data3: 880814780
-      Data4: -1976254579
-    Path: event:/SFX/wrong
-  - Guid:
-      Data1: 1145939515
-      Data2: 1262985311
-      Data3: -549663042
-      Data4: 62905211
-    Path: event:/Ambience/office_Ambience
+  eventReferences: []
