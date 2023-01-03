@@ -223,10 +223,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
-  HasSourceProject: 1
-  HasPlatforms: 1
+  HasSourceProject: 0
+  HasPlatforms: 0
   sourceProjectPath: Assets/Audio/VR - Escape Room 14.12.22/VR - Escape Room 14.12.22.fspro
-  sourceBankPath: Assets/Audio/VR - Escape Room 14.12.22/Build
+  sourceBankPath: Assets/Audio/VR - Escape Room 14.12.22/Build/Desktop
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
