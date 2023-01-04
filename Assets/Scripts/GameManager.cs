@@ -9,9 +9,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class GameManager : Singleton<GameManager>
 {
     private bool firstUpdate;
-    [FormerlySerializedAs("_interactable")] [SerializeField] private XRGrabInteractable _suitCsae;
     [SerializeField] private Animator _startAnimator;
-    [SerializeField] private Animator _cabinetOpenAnimator;
 
     public void PushBook(GameObject book, float force = 2f)
     {
@@ -28,7 +26,11 @@ public class GameManager : Singleton<GameManager>
         base.Awake();
         SceneManager.sceneLoaded += OnMainSceneLoaded;
     }
+    void Start()
+    {
+      
 
+    }
     void OnMainSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "Office")
@@ -39,18 +41,11 @@ public class GameManager : Singleton<GameManager>
     public void Update()
     {
         
-        if (firstUpdate)
-        {
-            _startAnimator.SetTrigger("Start");
-            firstUpdate = false;
-        }
+        // if (firstUpdate)
+        // {
+        //     _startAnimator.SetTrigger("Start");
+        //     firstUpdate = false;
+        // }
     }
-
-    public void OnSelectSuitcase(SelectEnterEventArgs args)
-    {
-        if (args.interactorObject.IsSelecting(_suitCsae))
-        {
-            _cabinetOpenAnimator.SetTrigger("Open");
-        }
-    }
+    
 }
