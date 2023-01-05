@@ -1355,7 +1355,6 @@ GameObject:
   - component: {fileID: 8872199609218754579}
   - component: {fileID: 8872199609218754577}
   - component: {fileID: 8872199609218754570}
-  - component: {fileID: 588270708207182088}
   - component: {fileID: 8872199609218754575}
   - component: {fileID: 8872199609218754568}
   - component: {fileID: 1139630914}
@@ -1444,24 +1443,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &588270708207182088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8872199609218754576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fc72f73b4c99a841a8799b4b4e78d5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _xrOrigin: {fileID: 8872199609218754572}
-  tp: {fileID: 8872199609218754577}
-  _actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _rayInteractor: {fileID: 8872199608982608106}
-  rightHandWithRay: {fileID: 8872199608982608110}
-  rightHandWithDirect: {fileID: 8872199610174559507}
 --- !u!114 &8872199609218754575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1775,7 +1756,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8872199609673355111
 MonoBehaviour:
@@ -2067,7 +2048,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8872199610174559498
 MonoBehaviour:
