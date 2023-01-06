@@ -22,6 +22,7 @@ public class DrawerMission : MonoBehaviour
     {
         if (button.activated && keyboard.activated)
         {
+            Debug.Log("OPEN");
             drawerRb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
         }
     }

@@ -66,10 +66,8 @@ MonoBehaviour:
   Path: Assets/Audio/VR - Escape Room 14.12.22/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638068221580000000
-  FileSizes:
-  - Name: Desktop
-    Value: 1803840
+  lastModified: 638068221560038216
+  FileSizes: []
   Exists: 1
 --- !u!114 &-2551971781428126552
 MonoBehaviour:
@@ -156,7 +154,7 @@ MonoBehaviour:
   - {fileID: -3276291741222356870}
   StringsBanks:
   - {fileID: 7682896565206520993}
-  cacheTime: 638068221580000000
+  cacheTime: 638068221560177920
   cacheVersion: 131593
 --- !u!114 &1324787303943943364
 MonoBehaviour:
@@ -281,9 +279,9 @@ MonoBehaviour:
   Path: Assets/Audio/VR - Escape Room 14.12.22/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638068221580000000
+  lastModified: 638068221560177920
   FileSizes:
-  - Name: Desktop
+  - Name: 
     Value: 1614
   Exists: 1
 --- !u!114 &8163697192955482553
