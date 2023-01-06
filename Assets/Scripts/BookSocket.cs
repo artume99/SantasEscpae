@@ -10,6 +10,7 @@ public class BookSocket : MonoBehaviour
 
     public void OnBookPut(SelectEnterEventArgs args)
     {
+        Debug.Log("BOOK IN");
         Book book = args.interactableObject.transform.gameObject.GetComponent<Book>();
         if (IsBookInPlace(book))
         {
@@ -27,6 +28,7 @@ public class BookSocket : MonoBehaviour
 
     private bool IsBookInPlace(Book book)
     {
+        Debug.Log($"{ book.bookPlaceInShelf} and {socketPlaceInShelf}");
         return book.bookPlaceInShelf == socketPlaceInShelf;
     }
 }

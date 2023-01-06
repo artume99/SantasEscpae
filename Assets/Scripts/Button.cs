@@ -1,19 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Button : MonoBehaviour
 {
-    public bool activated = true;
+    public bool activated;
 
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.CompareTag("Hand"))
+        {
+            Debug.Log("*CLICK*");
+            activated = true;
+        }
     }
 }

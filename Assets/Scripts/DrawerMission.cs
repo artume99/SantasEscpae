@@ -8,6 +8,8 @@ public class DrawerMission : MonoBehaviour
     public GameObject drawer;
     private Rigidbody drawerRb;
 
+    private bool missionComplete = false;
+
     public Keyboard keyboard;
     public Button button;
 
@@ -20,9 +22,13 @@ public class DrawerMission : MonoBehaviour
 
     private void Update()
     {
-        if (button.activated && keyboard.activated)
+        if (!missionComplete)
         {
-            drawerRb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
+            if (button.activated && keyboard.activated)
+            {
+                drawerRb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
+                missionComplete = true;
+            }
         }
     }
 }
