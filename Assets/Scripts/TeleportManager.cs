@@ -44,7 +44,7 @@ public class TeleportManager : Singleton<TeleportManager>
       float player_height = Math.Abs(_xrOrigin.transform.position.y - to.position.y);
       Vector3 new_transform = new Vector3(to.position.x, to.position.y + player_height, to.position.z);
       _xrOrigin.transform.position = new_transform;
-      AudioManager.Instance.PlaySound(AudioManager.Sounds.Teleport);
+     
 
    }
 

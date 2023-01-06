@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 
 public class AudioManager : Singleton<AudioManager>
@@ -11,16 +12,8 @@ public class AudioManager : Singleton<AudioManager>
 
    public enum Sounds
    {
-      MainLoop,
-      PuzzleSolver,
-      BallInsert,
-      BallPickUp,
-      BookDrop,
-      BookInsert,
-      Teleport,
-      WallDown,
-      BallWrong,
-      BookWrong
+      WallMove,
+      
    }
 
    protected override void Awake()
@@ -72,5 +65,13 @@ public class AudioManager : Singleton<AudioManager>
          yield return null;
       }
         
+   }
+
+   public void PlayFmodEventEmitter(GameObject obj)
+   {
+      StudioEventEmitter eventEmitter = obj.GetComponent<StudioEventEmitter>();
+      if(!eventEmitter)
+         Debug.Log("Event Emitter is not found");
+      eventEmitter.enabled = true;
    }
 }

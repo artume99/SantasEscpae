@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{6e7ce001-4775-4b7c-ba8e-017733c15aee}">
+		<property name="name">
+			<value>Solved-Duck</value>
+		</property>
+		<relationship name="folder">
+			<destination>{baad7a71-f567-4759-bdef-022dfe33f9d2}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{53b24609-621c-4438-baa6-a72a0f3513d2}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{53b24609-621c-4438-baa6-a72a0f3513d2}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.5899999737739563</value>
+		</property>
+	</object>
+</objects>

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 using Unity.XR;
 using UnityEngine.UI;
@@ -11,9 +12,11 @@ public class RemoteController : MonoBehaviour
     private bool tvOn;
     [SerializeField] private VideoPlayer _videoPlayer;
     [SerializeField] private RawImage tv;
+    [SerializeField] private StudioEventEmitter _eventEmitter;
     public void OnRemoteClick(ActivateEventArgs args)
     {
-        Debug.Log("CLICK");
+        _eventEmitter.enabled = true;
+        _eventEmitter.enabled = false;
         if (tvOn)
         {
             TurnOffTv();

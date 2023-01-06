@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{1d6482f1-49cc-495b-9d4f-4e8dbe986e91}">
+		<property name="name">
+			<value>2nd Violins</value>
+		</property>
+		<relationship name="folder">
+			<destination>{baad7a71-f567-4759-bdef-022dfe33f9d2}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e185334a-417a-4dad-829d-221c1ae5dd5b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e185334a-417a-4dad-829d-221c1ae5dd5b}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
