@@ -1,29 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AppleMission : MonoBehaviour
 {
-    public GameObject apple;
-    public GameObject fridge;
-    public Transform drawerT;
-    public int indc = 0;
-
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Rigidbody drawer;
+    [SerializeField] private Sprite[] appleSprites;
+    [SerializeField] private Image imageToShow;
+    public float force;
+    private bool completed;
+    private int applesEaten = 0;
+    public void AdvanceMission()
     {
+        if(completed)
+            return;
+        applesEaten += 1;
+        imageToShow.sprite = appleSprites[applesEaten];
+        if (applesEaten == appleSprites.Length - 1)
+        {
+            PushDrawer();
+            completed = true;
+        }
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void PushDrawer()
     {
-        if (apple.transform.position.x < fridge.transform.position.x)
-        {
-            indc = 1;
-        }
-        Vector3 drawer = Vector3.Lerp(drawerT.position, drawerT.position + Vector3.up, indc);
-
+        Debug.Log("PUSHED");
+        drawer.AddForce(Vector3.back * force);
     }
 
 }

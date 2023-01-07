@@ -6,27 +6,22 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ToastSocket : MonoBehaviour
 {
     [SerializeField] private XRSocketInteractor socket;
-    public int socketPlaceInToaster;
+    public bool IsOccupied;
 
-    public void OnBookPut(SelectEnterEventArgs args)
+    public void OnToastPut(SelectEnterEventArgs args)
     {
         Toast toast = args.interactableObject.transform.gameObject.GetComponent<Toast>();
-        if (IsToastInPlace(toast))
-        {
-            // sound
-            toast.SetInPlace(true);
-        }
+        IsOccupied = true;
+        toast.SetInPlace(true);
     }
 
     public void OnToastTake(SelectExitEventArgs args)
     {
         Toast toast = args.interactableObject.transform.gameObject.GetComponent<Toast>();
+        IsOccupied = false;
 
         toast.SetInPlace(false);
     }
 
-    private bool IsToastInPlace(Toast toast)
-    {
-        return toast.toastPlaceInShelf == socketPlaceInToaster;
-    }
+  
 }
