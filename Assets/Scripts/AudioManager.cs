@@ -17,7 +17,8 @@ public class AudioManager : Singleton<AudioManager>
       DrawerOpen,
       DoorOpen,
       PushBook,
-      ClockTicking
+      ClockTicking,
+      MainLoop
 
    }
 
@@ -40,6 +41,7 @@ public class AudioManager : Singleton<AudioManager>
       _eventInstances[(int)sound].set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
       return _eventInstances[(int)sound];
    }
+   
 
    public void StopSound(Sounds sound)
    {

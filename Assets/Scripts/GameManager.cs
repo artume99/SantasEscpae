@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.XR.Interaction.Toolkit;
+using Object = UnityEngine.Object;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -12,6 +14,10 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private Animator _startAnimator;
     private float gameTimer;
     private float maxTime = 60 * 10; // 10 mins
+    [SerializeField] private GameObject player;
+    [SerializeField] private Transform room1SpawnPoint;
+    [SerializeField] private XRDirectInteractor LeftHand;
+    [SerializeField] private XRDirectInteractor RightHand;
 
     public enum Scenes
     {
@@ -43,6 +49,37 @@ public class GameManager : Singleton<GameManager>
         SceneManager.LoadScene((int)scene);
     }
 
+    public void StartGame()
+    {
+        player.transform.position = room1SpawnPoint.position;
+        LoadScene(Scenes.EscapeRoom);
+        StartCoroutine(WaitForSceneLoad((int)Scenes.EscapeRoom));
+        AudioManager.Instance.PlaySound(AudioManager.Sounds.MainLoop);
+        gameTimer = 0f;
+        Invoke("StupidThing", 2);
+
+
+    }
+
+    public void StupidThing()
+    {
+        // You might be asking yourself WHYYYY??! and my answer is -> because it fixes a stupid bug i couldnt fix in any other awy.
+        
+        RightHand.enabled = false;
+        RightHand.enabled = true;
+        LeftHand.enabled = false;
+        LeftHand.enabled = true;
+        
+    }
+    
+    IEnumerator WaitForSceneLoad(int sceneNumber)
+    {
+        while (SceneManager.GetActiveScene().buildIndex != sceneNumber)
+        {
+            yield return null;
+        }
+    }
+
     private void Update()
     {
         gameTimer += Time.deltaTime;
@@ -54,6 +91,7 @@ public class GameManager : Singleton<GameManager>
 
     public void Restart()
     {
+        AudioManager.Instance.StopSound(AudioManager.Sounds.MainLoop);
         LoadScene(Scenes.MainMenu);
     }
 }
