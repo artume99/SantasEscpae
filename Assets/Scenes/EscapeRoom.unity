@@ -7302,7 +7302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[0].Path
@@ -7310,7 +7310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[1].Path
-      value: event:/SFX/spray
+      value: event:/SFX/wall down
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[2].Path
@@ -7370,19 +7370,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[1].Guid.Data1
-      value: 1097045987
+      value: -339867339
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[1].Guid.Data2
-      value: 1273571657
+      value: 1143131820
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[1].Guid.Data3
-      value: -1351820384
+      value: 304126608
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[1].Guid.Data4
-      value: 879480288
+      value: -89628402
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[2].Guid.Data1
@@ -12494,6 +12494,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
+  _eventEmitter: {fileID: 0}
+--- !u!114 &1486426594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295863601}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1825323687
+      Data2: 1259479076
+      Data3: -454942814
+      Data4: -5937374
+    Path: event:/SFX/room1/keyboard-click_continuos
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1493164166
 PrefabInstance:
   m_ObjectHideFlags: 0
