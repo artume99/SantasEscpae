@@ -1,23 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8926641685008945130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Audio/Escape Room VR FOR LIFE/Escape Room VR FOR LIFE/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638086253977346674
-  FileSizes: []
-  Exists: 1
 --- !u!114 &-8865110948788376868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +54,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-8416694597681802056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Areas
+  m_EditorClassIdentifier: 
+  Name: Areas
+  StudioPath: parameter:/Areas
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4111533267
+    data2: 1650221412
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-7463127539306640037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/fridge/fridge-door_open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/fridge/fridge-door_open
+  Guid:
+    Data1: -1909372528
+    Data2: 1320243361
+    Data3: 105375918
+    Data4: 917994091
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 437
 --- !u!114 &-7094502458876682800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +151,7 @@ MonoBehaviour:
     Data3: 304126608
     Data4: -89628402
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -172,7 +205,7 @@ MonoBehaviour:
     Data3: -1351820384
     Data4: 879480288
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -357,6 +390,84 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2360
   Exists: 1
+--- !u!114 &-5294987767950514207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sink_water/waterEnd
+  m_EditorClassIdentifier: 
+  Name: waterEnd
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3742980686
+    data2: 230448449
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5291820508968242255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/game-start
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/game-start
+  Guid:
+    Data1: -223885154
+    Data2: 1283585849
+    Data3: -490512478
+    Data4: -1460623477
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 64000
+--- !u!114 &-5214362918253216750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/drawer/drawer_open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/drawer/drawer_open
+  Guid:
+    Data1: 1842621394
+    Data2: 1195213809
+    Data3: 2130323875
+    Data4: 941414040
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1097
 --- !u!114 &-4890853833789420125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,7 +489,7 @@ MonoBehaviour:
     data1: 4111533267
     data2: 1650221412
   Type: 1
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &-4584973788019609045
@@ -401,6 +512,33 @@ MonoBehaviour:
   - Name: 
     Value: 2360
   Exists: 1
+--- !u!114 &-4574028694924700951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/drawer/drawer_locked
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/drawer/drawer_locked
+  Guid:
+    Data1: 373729136
+    Data2: 1226557400
+    Data3: -705070416
+    Data4: -1593091160
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1110
 --- !u!114 &-4554320779312974532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,19 +607,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/BGM/game_over
   Guid:
-    Data1: 1355207624
-    Data2: 1095688489
-    Data3: -1658139493
-    Data4: 194599042
+    Data1: -127423136
+    Data2: 1140266541
+    Data3: -523297143
+    Data4: 1491074900
   Banks:
-  - {fileID: -8926641685008945130}
-  IsStream: 0
+  - {fileID: -2984451332530214452}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 12000
 --- !u!114 &-3990005403455517062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,19 +658,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/BGM/game_win
   Guid:
-    Data1: 573354375
-    Data2: 1184435370
-    Data3: -1288976720
-    Data4: -796435784
+    Data1: -124026746
+    Data2: 1150213912
+    Data3: -2081931131
+    Data4: 1418465969
   Banks:
-  - {fileID: -8926641685008945130}
-  IsStream: 0
+  - {fileID: -2984451332530214452}
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 17454
 --- !u!114 &-3401957845000226955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,6 +746,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2984451332530214452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638087327428520014
+  FileSizes:
+  - Name: Desktop
+    Value: 7845888
+  Exists: 1
 --- !u!114 &-2944345477431754923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,7 +785,7 @@ MonoBehaviour:
     Data3: 337026997
     Data4: -1765061245
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -715,6 +873,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-1696131993103302429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/fridge/fridge-door_closed
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/fridge/fridge-door_closed
+  Guid:
+    Data1: -220119770
+    Data2: 1261357295
+    Data3: 1862432430
+    Data4: -1196587137
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3455
 --- !u!114 &-1445190377897476627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -758,7 +943,7 @@ MonoBehaviour:
     Data3: 134045883
     Data4: 1942013549
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -785,7 +970,7 @@ MonoBehaviour:
     Data3: -1906357344
     Data4: -309967945
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -813,7 +998,7 @@ MonoBehaviour:
     Data3: 783662471
     Data4: 595577001
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -861,8 +1046,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 7647422132749219395}
-  - {fileID: -8926641685008945130}
+  - {fileID: 5544843954633314135}
+  - {fileID: -2984451332530214452}
   EditorEvents:
   - {fileID: -525651720469470569}
   - {fileID: 4546275105429764046}
@@ -879,15 +1064,28 @@ MonoBehaviour:
   - {fileID: 515013166048150872}
   - {fileID: 8175966791689593371}
   - {fileID: -4224503921357474037}
-  - {fileID: 7860112302618389595}
-  - {fileID: 2649643008910722330}
   - {fileID: -6052561972919763840}
-  EditorParameters: []
+  - {fileID: -1696131993103302429}
+  - {fileID: 1367972830625652938}
+  - {fileID: 3238527277263344243}
+  - {fileID: 6906816806736076541}
+  - {fileID: 4866642822454332481}
+  - {fileID: 7128549371926003795}
+  - {fileID: -4574028694924700951}
+  - {fileID: 768599859835856918}
+  - {fileID: -7463127539306640037}
+  - {fileID: -5291820508968242255}
+  - {fileID: 2114044482201248870}
+  - {fileID: -5214362918253216750}
+  - {fileID: 3142609610496229636}
+  - {fileID: 2314720045018270661}
+  EditorParameters:
+  - {fileID: -8416694597681802056}
   MasterBanks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   StringsBanks:
-  - {fileID: 7647422132749219395}
-  cacheTime: 638086253977506864
+  - {fileID: 5544843954633314135}
+  cacheTime: 638087327428829183
   cacheVersion: 131593
 --- !u!114 &403616583014870266
 MonoBehaviour:
@@ -978,7 +1176,7 @@ MonoBehaviour:
     Data3: -454942814
     Data4: -5937374
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -986,6 +1184,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5895
+--- !u!114 &768599859835856918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/apple/apple_liking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/apple/apple_liking
+  Guid:
+    Data1: -1588774271
+    Data2: 1128931733
+    Data3: 568789172
+    Data4: -196955700
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1625
 --- !u!114 &1230179339431474669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1005,7 +1230,7 @@ MonoBehaviour:
     Data3: 1608271003
     Data4: -1448293108
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1069,6 +1294,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 312
+--- !u!114 &1367972830625652938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/room2/sink_water
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/room2/sink_water
+  Guid:
+    Data1: 586469182
+    Data2: 1211626695
+    Data3: -1944396912
+    Data4: 2099845601
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5294987767950514207}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9796
 --- !u!114 &1378874874200033243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,7 +1392,7 @@ MonoBehaviour:
     Data3: -549663042
     Data4: 62905211
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1167,7 +1420,7 @@ MonoBehaviour:
     Data3: 880814780
     Data4: -1976254579
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1230,6 +1483,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5500
+--- !u!114 &2114044482201248870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI,UX/teleport
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI,UX/teleport
+  Guid:
+    Data1: -1439956786
+    Data2: 1225571686
+    Data3: 242544039
+    Data4: 2078517240
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
 --- !u!114 &2137923548421036055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,7 +1537,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8023
---- !u!114 &2649643008910722330
+--- !u!114 &2314720045018270661
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1267,23 +1547,77 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/drawer_open
+  m_Name: event:/SFX/bell_ding
   m_EditorClassIdentifier: 
-  Path: event:/SFX/drawer_open
+  Path: event:/SFX/bell_ding
   Guid:
-    Data1: 1842621394
-    Data2: 1195213809
-    Data3: 2130323875
-    Data4: 941414040
+    Data1: -256068887
+    Data2: 1260960527
+    Data3: 192577930
+    Data4: 27484251
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1097
+  Length: 3500
+--- !u!114 &3142609610496229636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/apple/apple_chewing
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/apple/apple_chewing
+  Guid:
+    Data1: -1993011751
+    Data2: 1192121668
+    Data3: 73298092
+    Data4: -1206134701
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2857
+--- !u!114 &3238527277263344243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI,UX/menu-ray_hover
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI,UX/menu-ray_hover
+  Guid:
+    Data1: -1303940538
+    Data2: 1225781490
+    Data3: -616663420
+    Data4: 1336917884
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 166
 --- !u!114 &3641889506338477142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1303,7 +1637,7 @@ MonoBehaviour:
     Data3: -153554523
     Data4: -876040239
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -1357,7 +1691,7 @@ MonoBehaviour:
     Data3: 2091275710
     Data4: -408527379
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1365,6 +1699,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &4866642822454332481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI,UX/menu-ray_click
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI,UX/menu-ray_click
+  Guid:
+    Data1: 425850712
+    Data2: 1223391761
+    Data3: 313450900
+    Data4: -1606392590
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 487
 --- !u!114 &4880609711825807975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1446,6 +1807,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &5544843954633314135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638087327428829183
+  FileSizes:
+  - Name: Desktop
+    Value: 3218
+  Exists: 1
 --- !u!114 &6562522614133570826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1524,6 +1905,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &6906816806736076541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/room2/toaster_breadjump
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/room2/toaster_breadjump
+  Guid:
+    Data1: 1423805782
+    Data2: 1095959974
+    Data3: 877774209
+    Data4: 1436337908
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 621
 --- !u!114 &6993048790741490067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1551,6 +1959,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7128549371926003795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/apple/apple_disliking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/apple/apple_disliking
+  Guid:
+    Data1: -1155487653
+    Data2: 1240297315
+    Data3: -1154696004
+    Data4: -557254577
+  Banks:
+  - {fileID: -2984451332530214452}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2199
 --- !u!114 &7523331363463106029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1578,53 +2013,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5500
---- !u!114 &7647422132749219395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Audio/Escape Room VR FOR LIFE/Escape Room VR FOR LIFE/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638086253977506864
-  FileSizes:
-  - Name: 
-    Value: 2360
-  Exists: 1
---- !u!114 &7860112302618389595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/teleport
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/teleport
-  Guid:
-    Data1: -1439956786
-    Data2: 1225571686
-    Data3: 242544039
-    Data4: 2078517240
-  Banks:
-  - {fileID: -8926641685008945130}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 500
 --- !u!114 &8151820521131591789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,7 +2056,7 @@ MonoBehaviour:
     Data3: -84812154
     Data4: -594161226
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1723,7 +2111,7 @@ MonoBehaviour:
     Data3: -712324680
     Data4: 524614049
   Banks:
-  - {fileID: -8926641685008945130}
+  - {fileID: -2984451332530214452}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1

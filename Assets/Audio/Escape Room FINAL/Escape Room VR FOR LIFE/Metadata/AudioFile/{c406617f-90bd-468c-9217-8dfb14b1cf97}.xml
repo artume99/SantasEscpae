@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c406617f-90bd-468c-9217-8dfb14b1cf97}">
+		<property name="assetPath">
+			<value>toaster_breadjump.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.62099773242630385</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2458dc13-5d6e-47df-b35f-7bab8bdb4952}</destination>
+		</relationship>
+	</object>
+</objects>

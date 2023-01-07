@@ -1,19 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Timers;
+using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.XR.Interaction.Toolkit;
 using Object = UnityEngine.Object;
 
+
 public class GameManager : Singleton<GameManager>
 {
     private bool firstUpdate;
     [SerializeField] private Animator _startAnimator;
     private float gameTimer;
-    private float maxTime = 60 * 10; // 10 mins
+    private float maxTime = 60 * 0.5f; // 10 mins
     [SerializeField] private GameObject player;
     [SerializeField] private Transform room1SpawnPoint;
     [SerializeField] private XRDirectInteractor LeftHand;
@@ -83,9 +84,15 @@ public class GameManager : Singleton<GameManager>
     private void Update()
     {
         gameTimer += Time.deltaTime;
+        EventInstance mainLoop = AudioManager.Instance.GetSoundEventInstance(AudioManager.Sounds.MainLoop);
+        int intensity = (int)Mathf.Lerp(0, 100, gameTimer / maxTime);
+        Debug.Log(intensity);
+        mainLoop.setParameterByName("Intensity", intensity);
         if (gameTimer > maxTime)
         {
+            AudioManager.Instance.PlaySound(AudioManager.Sounds.Fail);
             Restart();
+            gameTimer = 0;
         }
     }
 

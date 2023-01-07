@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{488cbfd3-1bcc-4bd1-95c4-a5e3cce5a446}">
+		<property name="name">
+			<value>sprayEnd</value>
+		</property>
+		<relationship name="folder">
+			<destination>{baad7a71-f567-4759-bdef-022dfe33f9d2}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a2e2d721-5634-4473-9af9-ffe8c55cfc6e}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a2e2d721-5634-4473-9af9-ffe8c55cfc6e}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

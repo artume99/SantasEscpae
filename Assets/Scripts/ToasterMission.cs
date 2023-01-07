@@ -60,6 +60,14 @@ public class ToasterMission : MonoBehaviour
         }
         
         candle.LightCandle();
+        while (Math.Abs(toastsHolder.position.y - origPos.y) > 0.05)
+        {
+            Debug.Log(toastsHolder.position.y - toastEnter.position.y);
+            timer += Time.deltaTime * 4f;
+            toastsHolder.position = Vector3.Lerp(toastEnter.position, origPos, timer);
+            yield return new WaitForFixedUpdate();
+        }
+        AudioManager.Instance.PlayOneShotAttach(AudioManager.Sounds.ToastReady, gameObject);
     }
     
 }

@@ -18,7 +18,11 @@ public class AudioManager : Singleton<AudioManager>
       DoorOpen,
       PushBook,
       ClockTicking,
-      MainLoop
+      MainLoop,
+      Tasty,
+      ToastReady,
+      Win,
+      Fail
 
    }
 
@@ -74,11 +78,16 @@ public class AudioManager : Singleton<AudioManager>
         
    }
 
+   public EventInstance GetSoundEventInstance(Sounds sound)
+   {
+      return _eventInstances[(int)sound];
+   }
+
    public void PlayFmodEventEmitter(GameObject obj)
    {
       StudioEventEmitter eventEmitter = obj.GetComponent<StudioEventEmitter>();
       if(!eventEmitter)
          Debug.Log("Event Emitter is not found");
-      eventEmitter.enabled = true;
+      eventEmitter.Play();
    }
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{4e0d5f2c-b462-4cdd-b05c-616d0bdb7d7f}">
+		<property name="volume">
+			<value>3.5</value>
+		</property>
+		<property name="name">
+			<value>Music_SFX_ducking</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{7ec5f7ce-bf81-4a9c-b317-b303e9924cf2}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{bdf0fab3-a327-489f-b6ce-600d15ddb27f}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{f85c80f9-58da-49a3-baf6-fd148cad27e2}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{7ec5f7ce-bf81-4a9c-b317-b303e9924cf2}">
+		<relationship name="effects">
+			<destination>{98435f90-c889-4d8d-be56-93199d6523f5}</destination>
+			<destination>{79211cd3-a5b0-4288-ba3f-697716647d08}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{bdf0fab3-a327-489f-b6ce-600d15ddb27f}" />
+	<object class="MixerBusFader" id="{98435f90-c889-4d8d-be56-93199d6523f5}" />
+	<object class="Sidechain" id="{79211cd3-a5b0-4288-ba3f-697716647d08}" />
+</objects>
