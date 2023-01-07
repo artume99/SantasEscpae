@@ -5,7 +5,6 @@ using UnityEngine;
 public class Toast : MonoBehaviour
 {
     private bool inPlace;
-    public int toastPlaceInShelf;
     public bool IsInPlace()
     {
         return inPlace;
