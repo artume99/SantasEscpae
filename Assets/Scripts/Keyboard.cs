@@ -16,6 +16,7 @@ public class Keyboard : MonoBehaviour
         {
             _eventEmitter.enabled = true;
             activated = true;
+            time = 0f;
         }
     }
 
