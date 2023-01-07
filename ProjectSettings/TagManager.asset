@@ -8,6 +8,8 @@ TagManager:
   - cutSceneCam
   - Yummy
   - NotGood
+  - drawer
+  - SoundTrigger
   layers:
   - Default
   - TransparentFX

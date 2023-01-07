@@ -11,16 +11,13 @@ public class GameManager : Singleton<GameManager>
     private bool firstUpdate;
     [SerializeField] private Animator _startAnimator;
 
-    public void PushBook(GameObject book, float force = 2f)
+    public enum Scenes
     {
-        Rigidbody book_rb = book.GetComponent<Rigidbody>();
-        if(!book_rb)
-            Debug.Log("No rigidbody attached to the book");
-        Debug.Log($"We are pushing the book, {book.transform.forward * force}");
-
-        book_rb.AddForce(book.transform.forward * force);
+        MainMenu,
+        EscapeRoom,
+        Final
     }
-
+    
     protected override void Awake()
     {
         base.Awake();
@@ -38,14 +35,10 @@ public class GameManager : Singleton<GameManager>
             firstUpdate = true;
         }
     }
-    public void Update()
+
+    public void LoadScene(Scenes scene)
     {
-        
-        // if (firstUpdate)
-        // {
-        //     _startAnimator.SetTrigger("Start");
-        //     firstUpdate = false;
-        // }
+        SceneManager.LoadScene((int)scene);
     }
-    
+
 }

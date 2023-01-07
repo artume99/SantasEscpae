@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,12 @@ public class AppleMission : MonoBehaviour
     public float force;
     private bool completed;
     private int applesEaten = 0;
+
+    private void Start()
+    {
+        drawer.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+    }
+
     public void AdvanceMission()
     {
         if(completed)
@@ -27,8 +34,10 @@ public class AppleMission : MonoBehaviour
 
     private void PushDrawer()
     {
-        Debug.Log("PUSHED");
+        drawer.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        AudioManager.Instance.PlayOneShotAttach(AudioManager.Sounds.DrawerOpen, drawer.gameObject);
         drawer.AddForce(Vector3.back * force);
+        
     }
 
 }

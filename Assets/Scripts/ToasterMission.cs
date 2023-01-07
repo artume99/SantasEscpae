@@ -13,7 +13,8 @@ public class ToasterMission : MonoBehaviour
     [SerializeField] private Transform toastsHolder;
     [SerializeField] private Transform toastEnter;
     [SerializeField] private GameObject toaster;
-    [SerializeField] private ParticleSystem candle;
+    [SerializeField] private ParticleSystem candleParticleSystem;
+    [SerializeField] private Candle candle;
     private Vector3 origPos;
     private bool missionCompleted;
 
@@ -44,24 +45,21 @@ public class ToasterMission : MonoBehaviour
         while (Math.Abs(toastsHolder.position.y - toastEnter.position.y) > 0.05)
         {
             Debug.Log(toastsHolder.position.y - toastEnter.position.y);
-            timer += Time.deltaTime / 5f;
+            timer += Time.deltaTime / 2f;
             toastsHolder.position = Vector3.Lerp(origPos, toastEnter.position, timer);
-            yield return new WaitForNextFrameUnit();
+            yield return new WaitForFixedUpdate();
         }
 
         toaster.GetComponent<Highlight>().ToggleHighlight(true);
         timer = 0;
         while (timer < 10)
         {
+            toaster.GetComponent<Highlight>().ToggleHighlight(true);
             timer += Time.deltaTime;
-            yield return new WaitForNextFrameUnit();
+            yield return new WaitForFixedUpdate();
         }
-
-        LightCandle();
+        
+        candle.LightCandle();
     }
-
-    private void LightCandle()
-    {
-        candle.Play();
-    }
+    
 }

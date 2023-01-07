@@ -8,10 +8,16 @@ public class TriggerSound : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        var eventEmitter =  gameObject.transform.parent.gameObject.GetComponent<StudioEventEmitter>();
-        if(!eventEmitter)
-            return;
-        eventEmitter.enabled = true;
-        eventEmitter.enabled = false;
+        if (other.CompareTag("SoundTrigger"))
+        {
+
+
+            var eventEmitter = other.transform.parent.gameObject.GetComponent<StudioEventEmitter>();
+            Debug.Log(eventEmitter);
+            if (!eventEmitter)
+                return;
+            eventEmitter.enabled = true;
+            eventEmitter.enabled = false;
+        }
     }
 }
