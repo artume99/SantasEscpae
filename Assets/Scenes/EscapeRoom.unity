@@ -5198,6 +5198,8 @@ MonoBehaviour:
   _startAnimator: {fileID: 0}
   player: {fileID: 0}
   room1SpawnPoint: {fileID: 0}
+  LeftHand: {fileID: 0}
+  RightHand: {fileID: 0}
 --- !u!4 &687520503
 Transform:
   m_ObjectHideFlags: 0
@@ -5303,7 +5305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 948010477}
-  _eventEmitter: {fileID: 0}
+  _eventEmitter: {fileID: 693592518}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
