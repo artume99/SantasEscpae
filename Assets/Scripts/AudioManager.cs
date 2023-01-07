@@ -16,8 +16,9 @@ public class AudioManager : Singleton<AudioManager>
       Button,
       DrawerOpen,
       DoorOpen,
-      PushBook
-      
+      PushBook,
+      ClockTicking
+
    }
 
    protected override void Awake()

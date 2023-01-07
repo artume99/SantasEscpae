@@ -8768,7 +8768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[0].Path
@@ -8792,7 +8792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[5].Path
-      value: event:/SFX/drawer_open
+      value: event:/SFX/clock_ticking
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[6].Path
@@ -8900,19 +8900,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[5].Guid.Data1
-      value: 1842621394
+      value: 1574123364
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[5].Guid.Data2
-      value: 1195213809
+      value: 1191717037
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[5].Guid.Data3
-      value: 2130323875
+      value: -153554523
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[5].Guid.Data4
-      value: 941414040
+      value: -876040239
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223334645791, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: eventReferences.Array.data[6].Guid.Data1

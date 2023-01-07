@@ -10,6 +10,8 @@ public class GameManager : Singleton<GameManager>
 {
     private bool firstUpdate;
     [SerializeField] private Animator _startAnimator;
+    private float gameTimer;
+    private float maxTime = 60 * 10; // 10 mins
 
     public enum Scenes
     {
@@ -25,7 +27,7 @@ public class GameManager : Singleton<GameManager>
     }
     void Start()
     {
-      
+        AudioManager.Instance.PlaySound(AudioManager.Sounds.ClockTicking);
 
     }
     void OnMainSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -41,4 +43,17 @@ public class GameManager : Singleton<GameManager>
         SceneManager.LoadScene((int)scene);
     }
 
+    private void Update()
+    {
+        gameTimer += Time.deltaTime;
+        if (gameTimer > maxTime)
+        {
+            Restart();
+        }
+    }
+
+    public void Restart()
+    {
+        LoadScene(Scenes.MainMenu);
+    }
 }
