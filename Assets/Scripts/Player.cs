@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
         RaycastHit hit;
         int layerMask = 1 << 7;  // Interactable
 
-        if (Physics.Raycast( transform.position, transform.TransformDirection(Vector3.forward), out hit, 5, layerMask))
+        if (Physics.Raycast( transform.position, transform.TransformDirection(Vector3.forward), out hit, 0.2f, layerMask))
         {
             if (hit.transform.CompareTag("Yummy"))
             {

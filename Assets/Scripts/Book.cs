@@ -14,7 +14,9 @@ public class Book : MonoBehaviour
     public void SetInPlace(bool place)
     {
         inPlace = place;
+        AudioManager.Instance.PlayOneShotAttach(AudioManager.Sounds.PushBook, gameObject);
     }
+    
     
     // TODO: Add sound to drop
 }

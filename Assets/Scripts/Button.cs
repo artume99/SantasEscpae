@@ -11,7 +11,7 @@ public class Button : MonoBehaviour
     {
         if (other.CompareTag("Hand"))
         {
-            Debug.Log("*CLICK*");
+            AudioManager.Instance.PlayOneShotAttach(AudioManager.Sounds.Button, gameObject);
             activated = true;
         }
     }

@@ -13,7 +13,12 @@ public class AudioManager : Singleton<AudioManager>
    public enum Sounds
    {
       WallMove,
-      
+      Button,
+      DrawerOpen,
+      DoorOpen,
+      PushBook,
+      ClockTicking
+
    }
 
    protected override void Awake()

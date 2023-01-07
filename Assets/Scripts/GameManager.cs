@@ -10,17 +10,16 @@ public class GameManager : Singleton<GameManager>
 {
     private bool firstUpdate;
     [SerializeField] private Animator _startAnimator;
+    private float gameTimer;
+    private float maxTime = 60 * 10; // 10 mins
 
-    public void PushBook(GameObject book, float force = 2f)
+    public enum Scenes
     {
-        Rigidbody book_rb = book.GetComponent<Rigidbody>();
-        if(!book_rb)
-            Debug.Log("No rigidbody attached to the book");
-        Debug.Log($"We are pushing the book, {book.transform.forward * force}");
-
-        book_rb.AddForce(book.transform.forward * force);
+        MainMenu,
+        EscapeRoom,
+        Final
     }
-
+    
     protected override void Awake()
     {
         base.Awake();
@@ -28,7 +27,7 @@ public class GameManager : Singleton<GameManager>
     }
     void Start()
     {
-      
+        AudioManager.Instance.PlaySound(AudioManager.Sounds.ClockTicking);
 
     }
     void OnMainSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -38,14 +37,23 @@ public class GameManager : Singleton<GameManager>
             firstUpdate = true;
         }
     }
-    public void Update()
+
+    public void LoadScene(Scenes scene)
     {
-        
-        // if (firstUpdate)
-        // {
-        //     _startAnimator.SetTrigger("Start");
-        //     firstUpdate = false;
-        // }
+        SceneManager.LoadScene((int)scene);
     }
-    
+
+    private void Update()
+    {
+        gameTimer += Time.deltaTime;
+        if (gameTimer > maxTime)
+        {
+            Restart();
+        }
+    }
+
+    public void Restart()
+    {
+        LoadScene(Scenes.MainMenu);
+    }
 }
