@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{4dbfdad3-52f9-418f-9d60-035596a63015}">
+		<property name="name">
+			<value>waterEnd</value>
+		</property>
+		<relationship name="folder">
+			<destination>{baad7a71-f567-4759-bdef-022dfe33f9d2}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{657b8462-9d97-48c1-be43-40f6c2bdab9a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{657b8462-9d97-48c1-be43-40f6c2bdab9a}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

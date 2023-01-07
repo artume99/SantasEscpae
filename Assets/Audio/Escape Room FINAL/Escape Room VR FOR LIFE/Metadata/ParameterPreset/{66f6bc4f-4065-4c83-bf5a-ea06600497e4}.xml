@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{66f6bc4f-4065-4c83-bf5a-ea06600497e4}">
+		<property name="name">
+			<value>book drop 1 or 2</value>
+		</property>
+		<relationship name="folder">
+			<destination>{baad7a71-f567-4759-bdef-022dfe33f9d2}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{21ea708f-7a70-40f4-89aa-c09d780c3191}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{21ea708f-7a70-40f4-89aa-c09d780c3191}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

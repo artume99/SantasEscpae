@@ -18,15 +18,9 @@ public class Player : MonoBehaviour
 
         if (Physics.Raycast( transform.position, transform.TransformDirection(Vector3.forward), out hit, 0.2f, layerMask))
         {
-            if (hit.transform.CompareTag("Yummy"))
+            if (hit.transform.GetComponent<IEatable>() is not null)
             {
-                Debug.Log("YUM YUM");
                 hit.transform.GetComponent<IEatable>().Eat();
-                
-            }
-            else if (hit.transform.CompareTag("NotGood"))
-            {
-                Debug.Log("ew");
             }
             Debug.DrawRay( transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
             Debug.Log("Did Hit");
