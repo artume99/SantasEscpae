@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6655,6 +6655,7 @@ MonoBehaviour:
   player: {fileID: 1629115443}
   room1SpawnPoint: {fileID: 939931816}
   roomMainSSpawnPoint: {fileID: 983273118}
+  roomFinalSpawnPoint: {fileID: 0}
   LeftHand: {fileID: 731643649}
   RightHand: {fileID: 567542218}
   EventEmitter: {fileID: 1629115444}
@@ -8372,7 +8373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8872199609218754571, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.676
+      value: 3.574
       objectReference: {fileID: 0}
     - target: {fileID: 8872199609218754571, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8380,7 +8381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8872199609218754571, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.959
+      value: 8.272
       objectReference: {fileID: 0}
     - target: {fileID: 8872199609218754571, guid: d9b0fd6ec704bf44c81e6eff55ee896e, type: 3}
       propertyPath: m_LocalRotation.w

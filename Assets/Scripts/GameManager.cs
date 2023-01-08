@@ -19,6 +19,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private GameObject player;
     [SerializeField] private Transform room1SpawnPoint;
     [SerializeField] private Transform roomMainSSpawnPoint;
+    [SerializeField] private Transform roomFinalSpawnPoint;
     [SerializeField] private XRDirectInteractor LeftHand;
     [SerializeField] private XRDirectInteractor RightHand;
     public StudioEventEmitter EventEmitter;
@@ -28,7 +29,8 @@ public class GameManager : Singleton<GameManager>
         MAIN,
         MainMenu,
         EscapeRoom,
-        Final
+        FinalGood
+        // FinalBad
     }
     
     protected override void Awake()
@@ -111,9 +113,20 @@ public class GameManager : Singleton<GameManager>
         LoadScene(Scenes.MainMenu);
     }
 
-    public void Win()
-    {
-        AudioManager.Instance.PlaySound(AudioManager.Sounds.Win);
-        gameTimer = 0;
+    public void EndGame(bool win){
+        if(win){
+            TeleportManager.Instance.ActivateTeleportation(false);
+            AudioManager.Instance.StopSound(AudioManager.Sounds.MainLoop);
+            AudioManager.Instance.PlaySound(AudioManager.Sounds.Win);
+            gameTimer = 0;
+            player.transform.position = roomMainSSpawnPoint.position; // CHANGE THIS NATALIe!!!!!
+           LoadScene(Scenes.FinalGood);
+        }
+        else{
+            // AudioManager.Instance.PlaySound(AudioManager.Sounds.Win); RETURN NATALIE
+            Restart();
+        }
+
     }
+
 }
