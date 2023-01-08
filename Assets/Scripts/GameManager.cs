@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -14,14 +15,17 @@ public class GameManager : Singleton<GameManager>
     private bool firstUpdate;
     [SerializeField] private Animator _startAnimator;
     private float gameTimer;
-    private float maxTime = 60 * 0.5f; // 10 mins
+    private float maxTime = 60 * 10f; // 10 mins
     [SerializeField] private GameObject player;
     [SerializeField] private Transform room1SpawnPoint;
+    [SerializeField] private Transform roomMainSSpawnPoint;
     [SerializeField] private XRDirectInteractor LeftHand;
     [SerializeField] private XRDirectInteractor RightHand;
+    public StudioEventEmitter EventEmitter;
 
     public enum Scenes
     {
+        MAIN,
         MainMenu,
         EscapeRoom,
         Final
@@ -39,9 +43,10 @@ public class GameManager : Singleton<GameManager>
     }
     void OnMainSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "Office")
+        if (scene.name == "MAIN")
         {
-            firstUpdate = true;
+            LoadScene(Scenes.MainMenu);
+            Invoke("StupidThing", 2);
         }
     }
 
@@ -52,6 +57,8 @@ public class GameManager : Singleton<GameManager>
 
     public void StartGame()
     {
+        Debug.Log("We are here");
+        AudioManager.Instance.GetSoundEventInstance(AudioManager.Sounds.MainLoop).setParameterByName("Intensity", 0);
         player.transform.position = room1SpawnPoint.position;
         LoadScene(Scenes.EscapeRoom);
         StartCoroutine(WaitForSceneLoad((int)Scenes.EscapeRoom));
@@ -84,10 +91,8 @@ public class GameManager : Singleton<GameManager>
     private void Update()
     {
         gameTimer += Time.deltaTime;
-        EventInstance mainLoop = AudioManager.Instance.GetSoundEventInstance(AudioManager.Sounds.MainLoop);
         int intensity = (int)Mathf.Lerp(0, 100, gameTimer / maxTime);
-        Debug.Log(intensity);
-        mainLoop.setParameterByName("Intensity", intensity);
+        AudioManager.Instance.GetSoundEventInstance(AudioManager.Sounds.MainLoop).setParameterByName("Intensity", intensity);
         if (gameTimer > maxTime)
         {
             AudioManager.Instance.PlaySound(AudioManager.Sounds.Fail);
@@ -99,6 +104,7 @@ public class GameManager : Singleton<GameManager>
     public void Restart()
     {
         AudioManager.Instance.StopSound(AudioManager.Sounds.MainLoop);
+        player.transform.position = roomMainSSpawnPoint.position;
         LoadScene(Scenes.MainMenu);
     }
 }
