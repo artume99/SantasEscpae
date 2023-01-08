@@ -2234,7 +2234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
       propertyPath: eventReferences.Array.size
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
       propertyPath: eventReferences.Array.data[0].Path
@@ -2282,7 +2282,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
       propertyPath: eventReferences.Array.data[11].Path
-      value: event:/BGM/game_over
+      value: event:/SFX/UI,UX/menu-ray_hover
+      objectReference: {fileID: 0}
+    - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
+      propertyPath: eventReferences.Array.data[12].Path
+      value: event:/SFX/UI,UX/menu-ray_click
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
       propertyPath: eventReferences.Array.data[0].Guid.Data1
@@ -2462,19 +2466,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
       propertyPath: eventReferences.Array.data[11].Guid.Data1
-      value: -127423136
+      value: -1303940538
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
       propertyPath: eventReferences.Array.data[11].Guid.Data2
-      value: 1140266541
+      value: 1225781490
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
       propertyPath: eventReferences.Array.data[11].Guid.Data3
-      value: -523297143
+      value: -616663420
       objectReference: {fileID: 0}
     - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
       propertyPath: eventReferences.Array.data[11].Guid.Data4
-      value: 1491074900
+      value: 1336917884
+      objectReference: {fileID: 0}
+    - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
+      propertyPath: eventReferences.Array.data[12].Guid.Data1
+      value: 425850712
+      objectReference: {fileID: 0}
+    - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
+      propertyPath: eventReferences.Array.data[12].Guid.Data2
+      value: 1223391761
+      objectReference: {fileID: 0}
+    - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
+      propertyPath: eventReferences.Array.data[12].Guid.Data3
+      value: 313450900
+      objectReference: {fileID: 0}
+    - target: {fileID: 2347738223391820209, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}
+      propertyPath: eventReferences.Array.data[12].Guid.Data4
+      value: -1606392590
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1985307797104645138, guid: f8e2709e5b7dfad4d8f234b3e6be9beb, type: 3}

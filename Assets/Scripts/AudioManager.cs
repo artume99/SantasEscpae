@@ -22,7 +22,9 @@ public class AudioManager : Singleton<AudioManager>
       Tasty,
       ToastReady,
       Win,
-      Fail
+      Fail,
+      HoverButton,
+      ClickButton,
 
    }
 
@@ -50,7 +52,7 @@ public class AudioManager : Singleton<AudioManager>
    public void StopSound(Sounds sound)
    {
       _eventInstances[(int)sound].stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-      _eventInstances[(int)sound].release();
+      // _eventInstances[(int)sound].release();
    }
 
    public void PlayOneShot(Sounds sound)
