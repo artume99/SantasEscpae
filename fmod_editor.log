@@ -7,17 +7,474 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001AFEB3EC458 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001AF0A21DDD8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000088BD1FEEB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9A5BC33C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9A5BC3380
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9A5BC34A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9A5BC3560
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AEDEDA8338
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Viola_Celli-Loop2_4.4_bpm120_4bars', format=5, channels=2, frequency=48000, lengthbytes=98208, lengthpcm=384000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.385986.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000088BD1FEEB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9A5BC33C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9A5BC3380
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9A5BC34A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9A5BC3560
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AEDEDA8338
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='1st_Violins_Loop2_4.4_bpm120_4bars', format=5, channels=2, frequency=48000, lengthbytes=106752, lengthpcm=384000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.245117.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000088BD1FEEB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9A5BC33C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9A5BC3380
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9A5BC34A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9A5BC3560
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AEDEDA8338
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bass-Loop1_4.4_bpm120_4bars', format=5, channels=2, frequency=48000, lengthbytes=98848, lengthpcm=384000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.505096.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000088BD1FEEB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9A5BC33C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9A5BC3380
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9A5BC34A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9A5BC3560
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AEDEDA8338
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='2nd_Violins_Long-Loop1_4.4_bpm120_4bars', format=5, channels=2, frequency=48000, lengthbytes=107552, lengthpcm=384000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.138550.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000088BD1FEEB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9A5BC33C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9A5BC3380
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9A5BC34A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9A5BC3560
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AEDEDA8338
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bass-Loop2_4.4_bpm120_4bars', format=5, channels=2, frequency=48000, lengthbytes=97312, lengthpcm=384000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.604797.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000088BD1FEEB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9A5BC33C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9A5BC3380
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9A5BC34A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9A5BC3560
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AEDEDA8338
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Viola_Celli-Loop1_4.4_bpm120_4bars', format=5, channels=2, frequency=48000, lengthbytes=97088, lengthpcm=384000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.329956.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000088BD1FEEB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9A5BC33C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9A5BC3380
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9A5BC34A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9A5BC3560
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AEDEDA8338
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='2nd_Violins_Long-Loop2_4.4_bpm120_4bars', format=5, channels=2, frequency=48000, lengthbytes=117024, lengthpcm=384000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.104401.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000088BD1FEEB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9A5BC33C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9A5BC3380
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9A5BC34A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9A5BC3560
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AEDEDA8338
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='1st_Violins_Loop1_4.4_bpm120_4bars', format=5, channels=2, frequency=48000, lengthbytes=105152, lengthpcm=384000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.243988.
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 000001AFD688EE38 : node = 000001AFF2A59030
+[LOG] SystemI::createSound                     : add node to async list : head = 000001AF03377468.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AFD688EE38
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AFD688E928 : node = 000001AFF2A59170
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AFF2A59140
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AFD688EFE8 : node = 000001AEDA3382F0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 1
+[LOG] SystemI::createSound                     :     filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AFD688EAD8 : node = 000001AEDA338430
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AED8526538 : node = 000001AEDA338570
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 3
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bass-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=143776, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.589386.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AFD688EE38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AFD688E928
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AFF2A59280
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Celli-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=147616, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.423340.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AFD688E928
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AFD688EFE8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AEDA338400
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Violas-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=150368, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.231964.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AFD688EFE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AFD688EAD8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AEDA338540
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='2nd_Violins_Effects-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=167648, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.175140.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AFD688EAD8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AED8526538
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AEDA338680
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='1st_Violins_Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=165408, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.255920.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AED8526538
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEE1417088
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEE1417088
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEE1417598
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEE1417598
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEE14178F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEE14178F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEE1417238
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEE1417238
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEE14173E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEE14173E8
+[LOG] SoundI::release                          : 1st_Violins_Loop3_4.4_bpm120_6bars (000001AED8526538)
+[LOG] SoundI::release                          :     1st_Violins_Loop3_4.4_bpm120_6bars (000001AFF35DDB28)
+[LOG] SoundI::release                          :     1st_Violins_Loop3_4.4_bpm120_6bars (000001AEE14178F8)
+[LOG] SoundI::release                          : 2nd_Violins_Effects-Loop3_4.4_bpm120_6bars (000001AFD688EAD8)
+[LOG] SoundI::release                          :     2nd_Violins_Effects-Loop3_4.4_bpm120_6bars (000001AFF35DC2C8)
+[LOG] SoundI::release                          :     2nd_Violins_Effects-Loop3_4.4_bpm120_6bars (000001AEE14173E8)
+[LOG] SoundI::release                          : Violas-Loop3_4.4_bpm120_6bars (000001AFD688EFE8)
+[LOG] SoundI::release                          :     Violas-Loop3_4.4_bpm120_6bars (000001AFF35DBAA8)
+[LOG] SoundI::release                          :     Violas-Loop3_4.4_bpm120_6bars (000001AEE1417238)
+[LOG] SoundI::release                          : Celli-Loop3_4.4_bpm120_6bars (000001AFD688E928)
+[LOG] SoundI::release                          :     Celli-Loop3_4.4_bpm120_6bars (000001AFF35DB0E8)
+[LOG] SoundI::release                          :     Celli-Loop3_4.4_bpm120_6bars (000001AEE1417598)
+[LOG] SoundI::release                          : Bass-Loop3_4.4_bpm120_6bars (000001AFD688EE38)
+[LOG] SoundI::release                          :     Bass-Loop3_4.4_bpm120_6bars (000001AFF35DBDE8)
+[LOG] SoundI::release                          :     Bass-Loop3_4.4_bpm120_6bars (000001AEE1417088)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001AF05BFC598 : node = 000001AFEB406150
+[LOG] SystemI::createSound                     : add node to async list : head = 000001AF03377468.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AF05BFC598
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AF05BFCC58 : node = 000001AFEB406A10
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AFEB406260
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AF05BFC748 : node = 000001AFEB406B50
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AF05BFCFB8 : node = 000001AFEB406C90
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AF05BFD168 : node = 000001AFEB405ED0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 3
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bass-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=143776, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.589386.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AF05BFC598
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AF05BFCC58
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AFEB406B20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Celli-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=147616, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.423340.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AF05BFCC58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AF05BFC748
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AFEB406C60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Violas-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=150368, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.231964.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AF05BFC748
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AF05BFCFB8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AFEB406DA0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='2nd_Violins_Effects-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=167648, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.175140.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AF05BFCFB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AF05BFD168
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AFEB405FE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='1st_Violins_Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=165408, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.255920.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AF05BFD168
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEDA2328B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEDA2328B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEDA232C18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEDA232C18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AFCF8BC748
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AFCF8BC748
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEDA232DC8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEDA232DC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEDA232F78
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEDA232F78
+[LOG] SoundI::release                          : 1st_Violins_Loop3_4.4_bpm120_6bars (000001AF05BFD168)
+[LOG] SoundI::release                          :     1st_Violins_Loop3_4.4_bpm120_6bars (000001AFF35DBF88)
+[LOG] SoundI::release                          :     1st_Violins_Loop3_4.4_bpm120_6bars (000001AFCF8BC748)
+[LOG] SoundI::release                          : 2nd_Violins_Effects-Loop3_4.4_bpm120_6bars (000001AF05BFCFB8)
+[LOG] SoundI::release                          :     2nd_Violins_Effects-Loop3_4.4_bpm120_6bars (000001AFF35DD7E8)
+[LOG] SoundI::release                          :     2nd_Violins_Effects-Loop3_4.4_bpm120_6bars (000001AEDA232F78)
+[LOG] SoundI::release                          : Violas-Loop3_4.4_bpm120_6bars (000001AF05BFC748)
+[LOG] SoundI::release                          :     Violas-Loop3_4.4_bpm120_6bars (000001AFF35DBDE8)
+[LOG] SoundI::release                          :     Violas-Loop3_4.4_bpm120_6bars (000001AEDA232DC8)
+[LOG] SoundI::release                          : Celli-Loop3_4.4_bpm120_6bars (000001AF05BFCC58)
+[LOG] SoundI::release                          :     Celli-Loop3_4.4_bpm120_6bars (000001AFF35DA0A8)
+[LOG] SoundI::release                          :     Celli-Loop3_4.4_bpm120_6bars (000001AEDA232C18)
+[LOG] SoundI::release                          : Bass-Loop3_4.4_bpm120_6bars (000001AF05BFC598)
+[LOG] SoundI::release                          :     Bass-Loop3_4.4_bpm120_6bars (000001AFF35DB0E8)
+[LOG] SoundI::release                          :     Bass-Loop3_4.4_bpm120_6bars (000001AEDA2328B8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001AEDA2328B8 : node = 000001AF0997BF90
+[LOG] SystemI::createSound                     : add node to async list : head = 000001AF03377468.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEDA2328B8
+[LOG] SystemI::createSound                     : filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AEDA232F78 : node = 000001AF0997BE50
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AF0997C0A0
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AEDA232C18 : node = 000001AF0997C0D0
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AEDA232DC8 : node = 000001AF0997BD10
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001AFCF8BC8F8 : node = 000001AF0997C350
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001AF03377468.  list count = 3
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bass-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=143776, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.589386.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEDA2328B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEDA232F78
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AF0997BF60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Celli-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=147616, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.423340.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEDA232F78
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEDA232C18
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AF0997C1E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Violas-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=150368, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.231964.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEDA232C18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AEDA232DC8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AF0997BE20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='2nd_Violins_Effects-Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=167648, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.175140.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AEDA232DC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AFCF8BC8F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/Escape Room FINAL/Escape Room VR FOR LIFE/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7754720
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 91168
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001AF0997C460
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='1st_Violins_Loop3_4.4_bpm120_6bars', format=5, channels=2, frequency=48000, lengthbytes=165408, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.255920.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AFCF8BC8F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AF0A1D0078
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AF0A1D0078
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AF0A1D2FB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AF0A1D2FB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AF0A1CE578
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AF0A1CE578
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AF0A1D0228
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AF0A1D0228
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001AF0A1D14B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001AF0A1D14B8
+[LOG] SoundI::release                          :  (000001AFF36ED0B8)
+[LOG] SoundI::release                          :     1st_Violins_Loop2_4.4_bpm120_4bars (000001AEDEDAB388)
+[LOG] SoundI::release                          :  (000001AFF36ECF48)
+[LOG] SoundI::release                          :     Viola_Celli-Loop2_4.4_bpm120_4bars (000001AEDEDAEAC8)
+[LOG] SoundI::release                          :  (000001AFF36EC6A8)
+[LOG] SoundI::release                          :     2nd_Violins_Long-Loop1_4.4_bpm120_4bars (000001AEDEDAD5A8)
+[LOG] SoundI::release                          :  (000001AED51695B8)
+[LOG] SoundI::release                          :     2nd_Violins_Long-Loop2_4.4_bpm120_4bars (000001AEDEDB04C8)
+[LOG] SoundI::release                          :  (000001AFF36ED228)
+[LOG] SoundI::release                          :     Bass-Loop1_4.4_bpm120_4bars (000001AEDEDAD408)
+[LOG] SoundI::release                          :  (000001AED5169CE8)
+[LOG] SoundI::release                          :     Bass-Loop2_4.4_bpm120_4bars (000001AEDEDAAD08)
+[LOG] SoundI::release                          : 1st_Violins_Loop3_4.4_bpm120_6bars (000001AFCF8BC8F8)
+[LOG] SoundI::release                          :     1st_Violins_Loop3_4.4_bpm120_6bars (000001AFF35DA248)
+[LOG] SoundI::release                          :     1st_Violins_Loop3_4.4_bpm120_6bars (000001AF0A1CE578)
+[LOG] SoundI::release                          : 2nd_Violins_Effects-Loop3_4.4_bpm120_6bars (000001AEDA232DC8)
+[LOG] SoundI::release                          :     2nd_Violins_Effects-Loop3_4.4_bpm120_6bars (000001AFF35DC7A8)
+[LOG] SoundI::release                          :     2nd_Violins_Effects-Loop3_4.4_bpm120_6bars (000001AF0A1D14B8)
+[LOG] SoundI::release                          : Violas-Loop3_4.4_bpm120_6bars (000001AEDA232C18)
+[LOG] SoundI::release                          :     Violas-Loop3_4.4_bpm120_6bars (000001AFF35DA0A8)
+[LOG] SoundI::release                          :     Violas-Loop3_4.4_bpm120_6bars (000001AF0A1D0228)
+[LOG] SoundI::release                          : Celli-Loop3_4.4_bpm120_6bars (000001AEDA232F78)
+[LOG] SoundI::release                          :     Celli-Loop3_4.4_bpm120_6bars (000001AFF35DC608)
+[LOG] SoundI::release                          :     Celli-Loop3_4.4_bpm120_6bars (000001AF0A1D2FB8)
+[LOG] SoundI::release                          : Bass-Loop3_4.4_bpm120_6bars (000001AEDA2328B8)
+[LOG] SoundI::release                          :     Bass-Loop3_4.4_bpm120_6bars (000001AFF35DDE68)
+[LOG] SoundI::release                          :     Bass-Loop3_4.4_bpm120_6bars (000001AF0A1D0078)
+[LOG] SoundI::release                          :  (000001AED5169898)
+[LOG] SoundI::release                          :     Viola_Celli-Loop1_4.4_bpm120_4bars (000001AEDEDADA88)
+[LOG] SoundI::release                          :  (000001AED5169A08)
+[LOG] SoundI::release                          :     1st_Violins_Loop1_4.4_bpm120_4bars (000001AEDEDAB6C8)
