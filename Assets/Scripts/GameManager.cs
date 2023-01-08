@@ -65,6 +65,8 @@ public class GameManager : Singleton<GameManager>
         AudioManager.Instance.PlaySound(AudioManager.Sounds.MainLoop);
         gameTimer = 0f;
         Invoke("StupidThing", 2);
+        TeleportManager.Instance.ActivateTeleportation(true);
+
 
 
     }
@@ -103,8 +105,14 @@ public class GameManager : Singleton<GameManager>
 
     public void Restart()
     {
+        TeleportManager.Instance.ActivateTeleportation(false);
         AudioManager.Instance.StopSound(AudioManager.Sounds.MainLoop);
         player.transform.position = roomMainSSpawnPoint.position;
         LoadScene(Scenes.MainMenu);
+    }
+
+    public void Win()
+    {
+        AudioManager.Instance.PlaySound(AudioManager.Sounds.Win);
     }
 }

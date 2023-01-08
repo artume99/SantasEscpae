@@ -65,7 +65,7 @@ public class TeleportManager : Singleton<TeleportManager>
         
          return;
       }
-
+      
       if (!_rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
       {
          _rayInteractor.enabled = false;
@@ -73,13 +73,15 @@ public class TeleportManager : Singleton<TeleportManager>
          SwitchToGrab();
          return;
       }
-
+      
       TeleportRequest request = new TeleportRequest()
       {
          destinationPosition = hit.point,
 
       };
-      if (tp.enabled)
+      if(hit.transform is null)
+         return;
+      if (tp.enabled && hit.transform.CompareTag("Floor"))
       {
          tp.QueueTeleportRequest(request);
          // AudioManager.Instance.PlaySound(AudioManager.Sounds.Teleport);

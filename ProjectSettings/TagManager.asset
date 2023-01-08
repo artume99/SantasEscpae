@@ -10,6 +10,7 @@ TagManager:
   - NotGood
   - drawer
   - SoundTrigger
+  - Floor
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Interactable
   - Mirror
   - Ramp
-  - 
+  - Floor
   - 
   - 
   - 
