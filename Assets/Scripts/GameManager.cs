@@ -93,7 +93,7 @@ public class GameManager : Singleton<GameManager>
     private void Update()
     {
         gameTimer += Time.deltaTime;
-        int intensity = (int)Mathf.Lerp(0, 100, gameTimer / maxTime);
+        int intensity = (int)Mathf.Lerp(0, 20, gameTimer / maxTime);
         AudioManager.Instance.GetSoundEventInstance(AudioManager.Sounds.MainLoop).setParameterByName("Intensity", intensity);
         if (gameTimer > maxTime)
         {

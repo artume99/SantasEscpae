@@ -60,7 +60,7 @@ public class TeleportManager : Singleton<TeleportManager>
          return;
       }
 
-      if (_thumbstick.triggered)
+      if (_thumbstick.ReadValue<Vector2>() != Vector2.zero)
       {
         
          return;
