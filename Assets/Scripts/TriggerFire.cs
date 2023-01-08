@@ -22,5 +22,6 @@ public class TriggerFire : MonoBehaviour
     {
         _eventEmitter.enabled = true;
         fire.Play();
+        GameManager.Instance.Win();
     }
 }
