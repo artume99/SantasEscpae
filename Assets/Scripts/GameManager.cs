@@ -114,5 +114,6 @@ public class GameManager : Singleton<GameManager>
     public void Win()
     {
         AudioManager.Instance.PlaySound(AudioManager.Sounds.Win);
+        gameTimer = 0;
     }
 }
